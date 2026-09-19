@@ -1,0 +1,918 @@
+/* ─────────────────────────────────────────────────────────────
+   MIRO-INSPIRED ENTERPRISE DESIGN SYSTEM (from desing.md)
+   Stark white canvas, black-pill CTAs, pastel card accents,
+   pill-tab navigation, and dense audit comparison tables.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+
+  /* Surfaces */
+  --canvas: #ffffff;
+  --surface: #f8f9fa;
+  --surface-subtle: #f1f3f5;
+  --hairline: #e2e4e8;
+  --hairline-soft: #edf0f2;
+  --hairline-strong: #c8cbd0;
+
+  /* Miro Brand & Accent Palette */
+  --brand-yellow: #ffd02f;
+  --brand-yellow-deep: #f5c400;
+  --yellow-light: #fff8d6;
+  --yellow-dark: #665200;
+
+  --brand-coral: #ff5c47;
+  --coral-light: #ffebe8;
+  --coral-dark: #801e12;
+
+  --brand-teal: #0aa8a0;
+  --teal-light: #e6f7f6;
+  --teal-dark: #065450;
+
+  --brand-rose: #ea3986;
+  --rose-light: #fde8f1;
+  --rose-dark: #7a123f;
+
+  --brand-blue: #2251ff;
+  --blue-light: #edf2ff;
+  --blue-dark: #0f2c99;
+
+  /* Miro Text Tokens */
+  --ink-deep: #050038;
+  --ink: #11142d;
+  --charcoal: #2d3142;
+  --slate: #4c5264;
+  --steel: #6c757d;
+  --stone: #9ba1a6;
+  --muted: #b5b9bd;
+
+  /* Semantic State Tokens */
+  --success: #0a8544;
+  --success-bg: #e6f7ed;
+  --success-border: #a3e6be;
+  --success-text: #065e30;
+
+  --fail: #d92d20;
+  --fail-bg: #fee4e2;
+  --fail-border: #fda29b;
+  --fail-text: #912018;
+
+  --review: #b54708;
+  --review-bg: #fef0c7;
+  --review-border: #fedf89;
+  --review-text: #7a2e0e;
+
+  /* Elevation */
+  --shadow-subtle: rgba(5, 0, 56, 0.04) 0px 1px 3px 0px;
+  --shadow-card: rgba(5, 0, 56, 0.06) 0px 4px 14px 0px;
+  --shadow-elevated: rgba(5, 0, 56, 0.09) 0px 12px 32px -4px;
+}
+
+[data-theme="dark"] {
+  --canvas: #0f111a;
+  --surface: #151824;
+  --surface-subtle: #1c2030;
+  --hairline: #2b3044;
+  --hairline-soft: #232738;
+  --hairline-strong: #3d4460;
+
+  --ink-deep: #f8fafc;
+  --ink: #f1f3f9;
+  --charcoal: #d5d9e5;
+  --slate: #9fa7be;
+  --steel: #7b849c;
+
+  --yellow-light: rgba(255, 208, 47, 0.15);
+  --yellow-dark: #ffd02f;
+
+  --coral-light: rgba(255, 92, 71, 0.15);
+  --coral-dark: #ff8a7a;
+
+  --teal-light: rgba(10, 168, 160, 0.15);
+  --teal-dark: #38dbd2;
+
+  --rose-light: rgba(234, 57, 134, 0.15);
+  --rose-dark: #ff78b5;
+
+  --blue-light: rgba(34, 81, 255, 0.15);
+  --blue-dark: #82a0ff;
+
+  --success-bg: rgba(10, 133, 68, 0.18);
+  --success-border: rgba(10, 133, 68, 0.45);
+  --success-text: #4ade80;
+
+  --fail-bg: rgba(217, 45, 32, 0.18);
+  --fail-border: rgba(217, 45, 32, 0.45);
+  --fail-text: #f87171;
+
+  --review-bg: rgba(181, 71, 8, 0.18);
+  --review-border: rgba(181, 71, 8, 0.45);
+  --review-text: #fbbf24;
+
+  --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 4px 14px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 12px 32px rgba(0, 0, 0, 0.6);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--surface);
+  color: var(--ink);
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Top Header Navigation Bar (Minimal Miro & Linear Signature) ─── */
+.top-nav {
+  height: 58px;
+  background: var(--canvas);
+  border-bottom: 1px solid var(--hairline);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: var(--ink-deep);
+  user-select: none;
+}
+
+.brand-yellow-mark {
+  background: var(--brand-yellow);
+  color: var(--ink-deep);
+  font-size: 11px;
+  font-weight: 800;
+  padding: 3px 8px;
+  border-radius: 9999px; /* rounded-full */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  letter-spacing: 0.04em;
+}
+
+.brand-title {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--ink-deep);
+}
+
+.brand-version {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--steel);
+  background: var(--surface-subtle);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.v-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--hairline);
+  margin: 0 2px;
+}
+
+.live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--slate);
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  padding: 3px 9px;
+  border-radius: 9999px;
+}
+
+.pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--success);
+  display: inline-block;
+  box-shadow: 0 0 0 0 rgba(10, 133, 68, 0.4);
+  animation: pulse-ring 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(10, 133, 68, 0.5);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(10, 133, 68, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(10, 133, 68, 0);
+  }
+}
+
+.lead-selector-wrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lead-select {
+  background: var(--surface);
+  border: 1px solid var(--hairline-strong);
+  color: var(--ink-deep);
+  font-size: 12.5px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 9999px; /* Pill select */
+  cursor: pointer;
+  outline: none;
+  transition: all 0.15s ease;
+}
+.lead-select:hover {
+  border-color: var(--slate);
+  background: var(--canvas);
+}
+.lead-select:focus {
+  border-color: var(--brand-blue);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ── Buttons (Miro Black-Pill Signature) ─────────────────────── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 18px;
+  border-radius: 9999px; /* rounded.full */
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+/* Primary Black-Pill CTA */
+.btn-primary {
+  background: var(--ink-deep);
+  color: #ffffff;
+}
+.btn-primary:hover:not(:disabled) {
+  background: var(--charcoal);
+}
+
+/* Secondary Outline Pill */
+.btn-secondary {
+  background: var(--canvas);
+  border-color: var(--hairline-strong);
+  color: var(--ink);
+}
+.btn-secondary:hover:not(:disabled) {
+  background: var(--surface-subtle);
+  border-color: var(--steel);
+}
+
+/* Brand Yellow Pill CTA */
+.btn-yellow {
+  background: var(--brand-yellow);
+  color: var(--ink-deep);
+  border-color: var(--brand-yellow-deep);
+}
+.btn-yellow:hover:not(:disabled) {
+  background: var(--brand-yellow-deep);
+}
+
+.btn-theme {
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  color: var(--slate);
+  width: 36px;
+  height: 36px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-theme:hover {
+  color: var(--ink-deep);
+  border-color: var(--hairline-strong);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ── Pill Tabs Navigation (Minimal Miro Style) ─── */
+.tabs-nav-bar {
+  background: var(--canvas);
+  border-bottom: 1px solid var(--hairline);
+  padding: 8px 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  overflow: hidden; /* No scrollbar */
+}
+
+.tab-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--slate);
+  border: 1px solid var(--hairline);
+  background: var(--canvas);
+  border-radius: 9999px; /* pill-tab */
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.tab-btn:hover {
+  background: var(--surface-subtle);
+  color: var(--ink);
+}
+
+/* pill-tab-active (Miro black-pill) */
+.tab-btn.active {
+  background: var(--ink-deep);
+  color: #ffffff;
+  border-color: var(--ink-deep);
+}
+
+.tab-count {
+  font-size: 10.5px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 9999px;
+  background: var(--surface-subtle);
+  color: var(--slate);
+}
+.tab-btn.active .tab-count {
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+/* ── Main Content Container ──────────────────────────────────── */
+.main-content {
+  flex: 1;
+  padding: 20px 24px;
+  max-width: 1360px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ── Miro Pastel Cards Grid ──────────────────────────────────── */
+.stat-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.card-pastel {
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid transparent;
+  box-shadow: var(--shadow-subtle);
+  transition: transform 0.15s ease;
+}
+
+.card-pastel-mint {
+  background: var(--teal-light);
+  border-color: rgba(10, 168, 160, 0.2);
+  color: var(--teal-dark);
+}
+
+.card-pastel-coral {
+  background: var(--coral-light);
+  border-color: rgba(255, 92, 71, 0.2);
+  color: var(--coral-dark);
+}
+
+.card-pastel-yellow {
+  background: var(--yellow-light);
+  border-color: rgba(255, 208, 47, 0.3);
+  color: var(--yellow-dark);
+}
+
+.card-pastel-blue {
+  background: var(--blue-light);
+  border-color: rgba(34, 81, 255, 0.2);
+  color: var(--blue-dark);
+}
+
+.card-pastel-label {
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+}
+
+.card-pastel-val {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+  color: var(--ink-deep);
+}
+
+.card-pastel-sub {
+  font-size: 11.5px;
+  margin-top: 4px;
+  opacity: 0.8;
+}
+
+/* ── Gate Decision Hero Banner ───────────────────────────────── */
+.gate-banner {
+  border-radius: 12px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--shadow-subtle);
+}
+
+.gate-banner.passed {
+  background: var(--success-bg);
+  border: 1px solid var(--success-border);
+  color: var(--success-text);
+}
+
+.gate-banner.failed {
+  background: var(--fail-bg);
+  border: 1px solid var(--fail-border);
+  color: var(--fail-text);
+}
+
+.gate-banner.review {
+  background: var(--review-bg);
+  border: 1px solid var(--review-border);
+  color: var(--review-text);
+}
+
+.gate-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.gate-banner-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 9999px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-subtle);
+}
+[data-theme="dark"] .gate-banner-icon {
+  background: var(--surface);
+}
+
+.gate-title {
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.gate-desc {
+  font-size: 13.5px;
+  margin-top: 4px;
+  opacity: 0.9;
+}
+
+/* ── Standard Miro White Surface Cards ───────────────────────── */
+.panel-card {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: 16px; /* rounded.xl */
+  box-shadow: var(--shadow-subtle);
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 16px 22px;
+  border-bottom: 1px solid var(--hairline-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--canvas);
+}
+
+.panel-title {
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-deep);
+}
+
+.panel-body {
+  padding: 22px;
+}
+
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* CRM Grid */
+.crm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.crm-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.crm-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--steel);
+}
+
+.crm-value {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+/* ── Dense Comparison Table (Miro style) ─────────────────────── */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  text-align: left;
+}
+
+.data-table th {
+  padding: 12px 16px;
+  font-size: 11.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--slate);
+  border-bottom: 1px solid var(--hairline);
+  background: var(--surface);
+}
+
+.data-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--hairline-soft);
+  vertical-align: middle;
+}
+
+.data-table tr:hover td {
+  background: var(--surface);
+}
+
+/* ── Pill Badges ─────────────────────────────────────────────── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 9999px; /* rounded.full */
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-pass {
+  background: var(--success-bg);
+  color: var(--success-text);
+  border: 1px solid var(--success-border);
+}
+
+.badge-fail {
+  background: var(--fail-bg);
+  color: var(--fail-text);
+  border: 1px solid var(--fail-border);
+}
+
+.badge-review {
+  background: var(--review-bg);
+  color: var(--review-text);
+  border: 1px solid var(--review-border);
+}
+
+.badge-critical {
+  background: var(--coral-light);
+  color: var(--coral-dark);
+  border: 1px solid rgba(255, 92, 71, 0.3);
+  font-size: 10px;
+  font-weight: 800;
+}
+
+/* ── Verbatim Check Cards ────────────────────────────────────── */
+.check-item-card {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-subtle);
+  transition: border-color 0.15s ease;
+}
+.check-item-card:hover {
+  border-color: var(--hairline-strong);
+}
+
+.check-item-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.check-item-title {
+  font-size: 14.5px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--ink-deep);
+}
+
+.check-item-id {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--steel);
+}
+
+.check-quote-box {
+  background: var(--surface);
+  border-left: 3px solid var(--ink-deep);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 10px 10px 0;
+  font-size: 13px;
+  color: var(--charcoal);
+  font-style: italic;
+}
+
+.check-item-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline-soft);
+  font-size: 12.5px;
+  color: var(--slate);
+}
+
+/* ── Audio Scrubber Bar ──────────────────────────────────────── */
+.audio-player-panel {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  box-shadow: var(--shadow-subtle);
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+}
+
+.play-circle-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 9999px;
+  background: var(--ink-deep);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s ease;
+}
+.play-circle-btn:hover {
+  transform: scale(1.05);
+}
+
+.audio-time-label {
+  font-size: 13px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink-deep);
+}
+
+.timeline-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--surface-subtle);
+  outline: none;
+  cursor: pointer;
+  accent-color: var(--ink-deep);
+}
+
+/* ── Search Pill & Transcript Stream ─────────────────────────── */
+.search-pill {
+  width: 100%;
+  padding: 10px 18px;
+  background: var(--canvas);
+  border: 1px solid var(--hairline-strong);
+  border-radius: 9999px; /* Miro search-pill */
+  font-size: 13px;
+  color: var(--ink);
+  outline: none;
+}
+.search-pill:focus {
+  border-color: var(--brand-blue);
+}
+
+.transcript-box {
+  max-height: 620px;
+  overflow-y: auto;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--surface);
+  border: 1px solid var(--hairline);
+  border-radius: 16px;
+}
+
+.transcript-bubble {
+  padding: 14px 18px;
+  border-radius: 14px;
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.transcript-bubble:hover {
+  border-color: var(--hairline-strong);
+  box-shadow: var(--shadow-subtle);
+}
+.transcript-bubble.active-highlight {
+  border-color: var(--brand-yellow-deep);
+  background: var(--yellow-light);
+}
+
+.bubble-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.speaker-pill {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 9999px;
+}
+.speaker-pill.agent {
+  background: var(--blue-light);
+  color: var(--blue-dark);
+}
+.speaker-pill.customer {
+  background: var(--surface-subtle);
+  color: var(--charcoal);
+}
+
+.turn-timestamp {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--stone);
+}
+
+.bubble-text {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--ink);
+}
+
+/* ── Modal Dialog ────────────────────────────────────────────── */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 0, 56, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: var(--canvas);
+  border: 1px solid var(--hairline);
+  border-radius: 20px;
+  width: 100%;
+  max-width: 540px;
+  box-shadow: var(--shadow-elevated);
+  overflow: hidden;
+}
+
+.modal-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid var(--hairline-soft);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-label {
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--ink-deep);
+}
+
+.form-input, .form-textarea, .form-select {
+  padding: 10px 14px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+}
+.form-input:focus, .form-textarea:focus, .form-select:focus {
+  border-color: var(--brand-blue);
+}
+
+.modal-footer {
+  padding: 16px 24px;
+  border-top: 1px solid var(--hairline-soft);
+  background: var(--surface);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}

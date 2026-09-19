@@ -1,15 +1,43 @@
-# Python-generated files
+﻿# Python
 __pycache__/
-*.py[oc]
-build/
-dist/
-wheels/
-*.egg-info
-
-# Virtual environments
-.venv
-
-# Local databases and secrets
-*.db
-.env
+*.py[cod]
+*.pyo
+.venv/
+*.egg-info/
 .pytest_cache/
+*.pyc
+
+# Environment
+.env
+*.env.local
+
+# Database
+*.db
+*.db-shm
+*.db-wal
+
+# Node
+node_modules/
+dist/
+.dist/
+
+# Vite
+frontend/dist/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Audio files (too large for git)
+backend/audio/
+
+# Scratch
+backend/scratch/
+
+# PDF content extracts
+pdf_content.txt
+transcript_content.txt
