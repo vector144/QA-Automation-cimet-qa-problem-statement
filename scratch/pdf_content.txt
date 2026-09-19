@@ -1,0 +1,296 @@
+﻿=== PAGE 1 ===
+CIMET. / CRM
+ΓùÅ L I V E B R I E F ┬╖ J A I P U R
+Q A A U T O M A T I O N ┬╖ E N G I N E E R I N G B R I E F
+Score the sale
+before it ships.
+Every sale in CRM gets checked against its retailer's
+checklist automatically, before it can submit. All green,
+it goes through untouched. Any red, it's held ΓÇö with
+the exact failing line, transcript, and timestamp sitting
+right next to it.
+12
+HOURS
+01
+SOLO BUILD
+3
+RETAILERS
+On-site
+JAIPUR OFFICE
+LIVE BRIEF ┬╖ THIS IS A REAL BOTTLENECK, NOT A HYPOTHETICAL ┬╖ BUILD IT FOR REAL SALES
+
+
+=== PAGE 2 ===
+0 1 ┬╖ T H E B O T T L E N E C K
+A manual process that can't
+scale
+An auditor pulls a recording, listens end to end, fills an Excel form, and the
+sale waits. We do thousands of sales a month across roughly 30 retailers.
+This doesn't scale, and it won't survive a serious retailer audit.
+THE ASK
+Every sale in CRM is scored automatically against that retailer's checklist
+before it can be submitted. All green, the sale goes through untouched.
+Anything red, the sale is held and the agent or TL sees exactly which criteria
+failed, with the transcript line and audio timestamp sitting right next to it.
+They fix it or challenge it, then it goes.
+Three of our current forms are already attached ΓÇö energy, broadband, plus
+the retailer-side forms from Retailer 1, Retailer 2 and Retailer 3. These are
+already the spec. We just need to move them out of Excel and into CRM.
+FORMS ALREADY IN HAND
+Energy
+Broadband
+Retailer 1
+Retailer 2
+Retailer 3
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 2
+
+
+=== PAGE 3 ===
+0 2 ┬╖ W H A T G E T S B U I L T
+Recording and transcript
+ingestion. Zero manual
+handling.
+The dialler pushes the recording to CRM by API, keyed on Lead ID, within
+minutes of hangup. CRM sends it to transcription with speaker separation
+and word-level timestamps. Transcript is stored against the lead. Nobody
+downloads or uploads anything, ever.
+BUILD THIS FIRST
+Everything else in this brief ΓÇö the check library, the scoring engine, the
+dashboards ΓÇö is dead without this pipeline. Recording and transcript
+ingestion, keyed on Lead ID, with zero manual handling, comes before
+anything else.
+Once a transcript exists against a lead, scoring becomes a comparison
+problem: transcript against script, transcript against CRM fields, transcript
+against the retailer's own plan and rate card. That comparison is what the
+rest of this brief specifies.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 3
+
+
+=== PAGE 4 ===
+0 3 ┬╖ T H R E E T Y P E S O F C H E C K S
+This part matters most
+TYPE
+COMPARES
+EXAMPLE
+BLOCKS
+SALE?
+A ┬╖ Verbatim / script
+Transcript vs.
+approved script
+DMO/VDO read verbatim, recording
+disclaimer, T&Cs, EIC
+Yes if
+critical
+B ┬╖ Factual match
+Transcript vs. CRM
+fields vs. retailer
+plan and rate card
+Rate quoted = rate on plan; address,
+DOB, email, NMI/MIRN, fuel type,
+concession, life support, move-in
+date, gift card value
+Yes
+C ┬╖ Behaviour
+Transcript only
+Rapport, interruptions, dead air,
+objection handling
+No
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 4
+
+
+=== PAGE 5 ===
+0 4 ┬╖ W O R K E D E X A M P L E
+Lead 3613790 ΓÇö illustrative
+Retailer 1, Agent A, 30 minute call. CRM shows:
+LEAD 36137 90 ┬╖ RETAI LER 1 ┬╖ 30 MIN C ALL
+Sale is held. The TL opens the lead, clicks the timestamp, hears twenty
+seconds, corrects the email and either re-confirms the rate with the
+customer or the sale is cancelled. Nobody listened to thirty minutes to find
+that.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 5
+PASS Recording disclaimer (critical) ΓÇö verbatim match at 00:12
+Γ£ô
+PASS Account holder confirmed (critical) at 02:41
+Γ£ô
+PASS DMO read verbatim (critical) at 09:55
+Γ£ô
+FAIL Rates and charges (critical) ΓÇö agent said "peak is 28.6 cents" at 14:02.
+Plan on the lead is 31.9c/kWh peak. Mismatch.
+Γ£ò
+FAIL Email captured (critical) ΓÇö agent read back "j.smith@gmail.com" at 22:10.
+CRM field says "j.smith@gmial.com." Mismatch.
+Γ£ò
+NOTE Dead air (non-critical): 47 seconds at 18:30. Coaching note.
+ΓÇô
+
+
+=== PAGE 6 ===
+0 5 ┬╖ G A T E L O G I C
+When a sale actually goes
+through
+0 6 ┬╖ D A S H B O A R D S
+Agent-wise, daily / weekly /
+monthly
+Rolled up by retailer, campaign (owned site, affiliate, paid search, inbound),
+site, and TL. Plus auditor agreement rate, so we can see whether the model
+is calibrated and whether our own auditors are consistent with each other.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 6
+All criticals pass ΓÇö sale auto-submits, no human touch.
+ΓÇö
+Any critical fail ΓÇö held, routed to the TL queue.
+ΓÇö
+Low confidence on any check ΓÇö routed to QA rather than auto-passed.
+ΓÇö
+5% of clean calls are sampled to a human anyway ΓÇö we're measuring the
+model, not just trusting it.
+ΓÇö
+Score with and without fatal factors (we already calculate both).
+ΓÇö
+Critical fail rate, and which specific check is failing.
+ΓÇö
+First-pass yield ΓÇö percentage of sales that go green with no rework.
+ΓÇö
+Repeat offences ΓÇö the same critical check failing three or more times in a
+rolling seven days flags the TL and triggers a warning under the
+performance policy.
+ΓÇö
+
+
+=== PAGE 7 ===
+0 7 ┬╖ N O N - N E G O T I A B L E
+Constraints & guardrails
+We operate in regulated Australian verticals. The scoring system inherits the
+same obligations as the calls it's grading.
+Γû╕ Test data only
+No real customer PII in any dev or demo
+environment. Use the synthetic leads and
+sanitised transcripts we provide until the gate is
+live on real traffic.
+Γû╕ Consent is a check, not an
+assumption
+The system verifies the recording disclaimer
+was read on every call; it never assumes
+consent just because a recording exists.
+Γû╕ No card data surfaced
+If a card number is spoken on a call, the
+transcript view redacts it before anyone sees it.
+The score flags the violation; the number itself
+never needs to be shown.
+Γû╕ No advice, no auto-correction
+The system tells you what failed and exactly
+where. It doesn't rewrite the sale, override
+the agent, or contact the customer on its
+own.
+Γû╕ Scored against the rules that were
+live
+Every check resolves to the check-library version
+in effect on the call date, not today's version.
+Γû╕ Respect the override
+When a human auditor overturns an
+automated score, that decision is logged, not
+silently dropped.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 7
+
+
+=== PAGE 8 ===
+0 8 ┬╖ J U D G I N G
+How we'll score it
+CRITERION
+WEIGHT
+WHAT WE LOOK FOR
+Scoring accuracy
+30%
+Agreement with human auditors on a sampled set of calls;
+critical checks essentially never false-pass.
+Coverage
+25%
+All three check types ΓÇö verbatim, factual, behaviour ΓÇö
+running end-to-end against at least one retailer's full
+checklist.
+Traceability
+20%
+Every score resolves to a transcript line, an audio
+timestamp, and the exact check version that was live on
+the call date.
+Gate & escalation logic
+15%
+Any critical fail is held, low-confidence scores route to a
+human, nothing uncertain auto-passes.
+Guardrails & judgment
+10%
+Handles messy real calls ΓÇö crosstalk, mishears, silence ΓÇö
+without manufacturing false criticals.
+The proof is a real lead scored live ΓÇö held or passed, with the exact
+reasoning shown. Slides support it; they don't replace it.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 8
+
+
+=== PAGE 9 ===
+0 9 ┬╖ T H E S E T U P
+What we hand you
+You choose your own stack, models, and tools beyond what we provide.
+ΓåÆA test recording of a real sales call ΓÇö hear exactly how agents talk through
+each section, so your comparison logic is built against real speech, not
+assumptions.
+ΓåÆA synthetic lead dataset ΓÇö ID, retailer, last-completed step, test contact,
+and a sanitised transcript to develop against.
+ΓåÆA check-library export for one retailer ΓÇö criteria, weights, and critical flags
+already defined, ready to load into your scoring engine.
+ΓåÆA scoring sandbox with the expected payload shape, so you're not guessing
+the schema.
+ΓåÆStable, dedicated internet connectivity on-site.
+ΓåÆOn-site mentors from the platform and QA teams.
+1 0 ┬╖ P R E R E Q U I S I T E S
+What you bring
+This is a bring-your-own-tools build. CIMET provides the problem, the data,
+connectivity, and the mentors ΓÇö everything you build with is on you.
+COME READY TO BUILD
+Arrive with your environment already set up and your logins already working
+ΓÇö the clock starts at hour zero, and setup time comes out of your 12 hours.
+C I M E T E N G I N E E R I N G ΓÇö Q A A U T O M A T I O N
+0 9
+Your own laptop, charger, and any accessories you need to work through
+the full 12 hours.
+ΓÇö
+Your own access to whichever AI tools you build with ΓÇö Claude, Cursor,
+ChatGPT, or otherwise.
+ΓÇö
+Your own subscriptions or licenses for any tool, model, or service your
+solution depends on.
+ΓÇö
+Anything else your chosen stack requires ΓÇö CIMET does not provision or
+reimburse tooling for this session.
+ΓÇö
+
+
+=== PAGE 10 ===
+H O W T O E N T E R
+One hard problem.
+12 hours. Solo.
+We're inviting strong developers in Jaipur. Bring your laptop and your
+best engineering instincts ΓÇö we'll bring the problem, the data, and
+the mentors.
+APPLY VIA LINKEDIN ΓåÆ
+Apply by [date] ┬╖ Limited spots
+12 hrs
+FORMAT ┬╖ ON-SITE
+Solo
+TEAM SIZE ΓÇö 1
+Jaipur
+CIMET OFFICE
+Repo + demo
+SUBMISSION
+The ask, one more time:
+No sale ships unscored.
+Then explain exactly why, in seconds ΓÇö not
+minutes.
+CIMET ┬╖ ENGINEERING ΓÇö QA AUTOMATION ┬╖ JAIPUR ┬╖ DATES & PRIZES [TBC]
+
+

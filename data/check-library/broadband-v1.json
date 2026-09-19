@@ -1,0 +1,121 @@
+{
+  "id": "broadband-v1",
+  "retailer_id": "retailer-broadband",
+  "effective_from": "2024-01-01",
+  "checks": [
+    {
+      "id": "BB-001",
+      "name": "Recording Disclaimer",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "This call will be recorded for quality assurance and training purposes.",
+      "fuzzy_threshold": 0.82
+    },
+    {
+      "id": "BB-002",
+      "name": "Agent Identity Disclosed",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "This is [AGENT_NAME] from [COMPANY_NAME].",
+      "fuzzy_threshold": 0.75
+    },
+    {
+      "id": "BB-003",
+      "name": "Recording Muted Before Card Collection",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "I need to mute the recording",
+      "fuzzy_threshold": 0.70
+    },
+    {
+      "id": "BB-004",
+      "name": "Introductory Price Stated Correctly",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "plan_price_intro",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states monthly price for first promotional period in dollars"
+    },
+    {
+      "id": "BB-005",
+      "name": "Standard Price Stated Correctly",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "plan_price_standard",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states monthly price after promotional period in dollars"
+    },
+    {
+      "id": "BB-006",
+      "name": "Customer Full Name Verified",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "customer_full_name",
+      "crm_field_type": "string",
+      "fuzzy_threshold": 0.85,
+      "extraction_hint": "agent reads back or verifies customer full name for ID verification"
+    },
+    {
+      "id": "BB-007",
+      "name": "Email Address Confirmed",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "email",
+      "crm_field_type": "email",
+      "extraction_hint": "agent reads back or confirms customer email address"
+    },
+    {
+      "id": "BB-008",
+      "name": "Service Address Confirmed",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "service_address",
+      "crm_field_type": "string",
+      "fuzzy_threshold": 0.80,
+      "extraction_hint": "agent reads back the service or connection address"
+    },
+    {
+      "id": "BB-009",
+      "name": "Modem Upfront Cost Stated as Free",
+      "type": "FACTUAL",
+      "is_critical": false,
+      "blocks_sale": false,
+      "crm_field": "modem_upfront_cost",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states modem upfront cost is zero dollars or free"
+    },
+    {
+      "id": "BB-010",
+      "name": "Delivery Timeframe Stated",
+      "type": "FACTUAL",
+      "is_critical": false,
+      "blocks_sale": false,
+      "crm_field": "delivery_days",
+      "crm_field_type": "string",
+      "extraction_hint": "agent states modem delivery timeframe in business days"
+    },
+    {
+      "id": "BB-011",
+      "name": "Dead Air Detection",
+      "type": "BEHAVIOUR",
+      "is_critical": false,
+      "blocks_sale": false,
+      "threshold_seconds": 30
+    },
+    {
+      "id": "BB-012",
+      "name": "Objection Handling Quality",
+      "type": "BEHAVIOUR",
+      "is_critical": false,
+      "blocks_sale": false
+    }
+  ]
+}

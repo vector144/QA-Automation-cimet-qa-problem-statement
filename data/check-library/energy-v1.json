@@ -1,0 +1,119 @@
+{
+  "id": "energy-v1",
+  "retailer_id": "retailer-energy",
+  "effective_from": "2024-01-01",
+  "checks": [
+    {
+      "id": "EN-001",
+      "name": "Recording Disclaimer",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "This call may be recorded for quality and training purposes.",
+      "fuzzy_threshold": 0.85
+    },
+    {
+      "id": "EN-002",
+      "name": "Account Holder Confirmed",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "Can I confirm I am speaking with the account holder?",
+      "fuzzy_threshold": 0.80
+    },
+    {
+      "id": "EN-003",
+      "name": "DMO/VDO Read Verbatim",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "I am required to advise you that you have the right to compare energy offers on the Victorian Default Offer.",
+      "fuzzy_threshold": 0.88
+    },
+    {
+      "id": "EN-004",
+      "name": "EIC Statement Read",
+      "type": "VERBATIM",
+      "is_critical": true,
+      "blocks_sale": true,
+      "script": "An Energy Information Comparison document has been sent to your email.",
+      "fuzzy_threshold": 0.80
+    },
+    {
+      "id": "EN-005",
+      "name": "Peak Rate Quoted Correctly",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "peak_rate_cents",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states peak usage rate in cents per kilowatt hour"
+    },
+    {
+      "id": "EN-006",
+      "name": "Off-Peak Rate Quoted Correctly",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "offpeak_rate_cents",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states off-peak usage rate in cents per kilowatt hour"
+    },
+    {
+      "id": "EN-007",
+      "name": "Daily Supply Charge Stated",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "supply_charge_cents",
+      "crm_field_type": "numeric",
+      "extraction_hint": "agent states daily supply charge in cents"
+    },
+    {
+      "id": "EN-008",
+      "name": "Email Address Confirmed",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "email",
+      "crm_field_type": "email",
+      "extraction_hint": "agent reads back or confirms customer email address"
+    },
+    {
+      "id": "EN-009",
+      "name": "NMI Confirmed",
+      "type": "FACTUAL",
+      "is_critical": true,
+      "blocks_sale": true,
+      "crm_field": "nmi",
+      "crm_field_type": "string",
+      "fuzzy_threshold": 0.95,
+      "extraction_hint": "agent reads back the National Metering Identifier number"
+    },
+    {
+      "id": "EN-010",
+      "name": "Move-In Date Confirmed",
+      "type": "FACTUAL",
+      "is_critical": false,
+      "blocks_sale": false,
+      "crm_field": "move_in_date",
+      "crm_field_type": "string",
+      "extraction_hint": "agent confirms the move-in or connection start date"
+    },
+    {
+      "id": "EN-011",
+      "name": "Dead Air Detection",
+      "type": "BEHAVIOUR",
+      "is_critical": false,
+      "blocks_sale": false,
+      "threshold_seconds": 30
+    },
+    {
+      "id": "EN-012",
+      "name": "Objection Handling Quality",
+      "type": "BEHAVIOUR",
+      "is_critical": false,
+      "blocks_sale": false
+    }
+  ]
+}

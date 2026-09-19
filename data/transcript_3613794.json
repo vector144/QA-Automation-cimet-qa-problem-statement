@@ -1,0 +1,1072 @@
+{
+  "turns": [
+    {
+      "turn_index": 0,
+      "speaker": "Customer",
+      "text": "Hello, Helen speaking. Yes.",
+      "start_ms": 0,
+      "end_ms": 1780
+    },
+    {
+      "turn_index": 1,
+      "speaker": "Agent",
+      "text": "Hi, Helen.",
+      "start_ms": 2620,
+      "end_ms": 3139
+    },
+    {
+      "turn_index": 2,
+      "speaker": "Customer",
+      "text": "Good day.",
+      "start_ms": 3520,
+      "end_ms": 3919
+    },
+    {
+      "turn_index": 3,
+      "speaker": "Agent",
+      "text": "This is Marco Santos from Internet's Comparison. How are you?",
+      "start_ms": 4299,
+      "end_ms": 7299
+    },
+    {
+      "turn_index": 4,
+      "speaker": "Customer",
+      "text": "Good, thanks.",
+      "start_ms": 8080,
+      "end_ms": 8960
+    },
+    {
+      "turn_index": 5,
+      "speaker": "Agent",
+      "text": "How are you?",
+      "start_ms": 9040,
+      "end_ms": 9420
+    },
+    {
+      "turn_index": 6,
+      "speaker": "Customer",
+      "text": "Yeah, I'm good.",
+      "start_ms": 9639,
+      "end_ms": 10580
+    },
+    {
+      "turn_index": 7,
+      "speaker": "Agent",
+      "text": "Thank you. And we noticed that you're looking for better internet plans and we're calling to assist you with this.",
+      "start_ms": 10719,
+      "end_ms": 15559
+    },
+    {
+      "turn_index": 8,
+      "speaker": "Customer",
+      "text": "Yay, okay.",
+      "start_ms": 16940,
+      "end_ms": 17779
+    },
+    {
+      "turn_index": 9,
+      "speaker": "Agent",
+      "text": "And as I check it, your address is 14 Harbour Street, Parramatta, Nisawaut, 2150.",
+      "start_ms": 18340,
+      "end_ms": 24439
+    },
+    {
+      "turn_index": 10,
+      "speaker": "Customer",
+      "text": "Correct.",
+      "start_ms": 24760,
+      "end_ms": 25140
+    },
+    {
+      "turn_index": 11,
+      "speaker": "Agent",
+      "text": "Ellen.",
+      "start_ms": 25680,
+      "end_ms": 25939
+    },
+    {
+      "turn_index": 12,
+      "speaker": "Customer",
+      "text": "Yep.",
+      "start_ms": 26359,
+      "end_ms": 26560
+    },
+    {
+      "turn_index": 13,
+      "speaker": "Agent",
+      "text": "14 Harbour Street, Parramatta, Nisawar, turn 2150.",
+      "start_ms": 26560,
+      "end_ms": 30939
+    },
+    {
+      "turn_index": 14,
+      "speaker": "Customer",
+      "text": "K.",
+      "start_ms": 31599,
+      "end_ms": 31800
+    },
+    {
+      "turn_index": 15,
+      "speaker": "Agent",
+      "text": "By the way, please be advised that this call will be recorded for quality assurance and training purposes.",
+      "start_ms": 32500,
+      "end_ms": 38260
+    },
+    {
+      "turn_index": 16,
+      "speaker": "Customer",
+      "text": "K.",
+      "start_ms": 38980,
+      "end_ms": 39300
+    },
+    {
+      "turn_index": 17,
+      "speaker": "Agent",
+      "text": "Now let me double check the address. Bear with me. There you go. As I check it, yeah, the address is already an NBN ready fiber to the premises technology.",
+      "start_ms": 39680,
+      "end_ms": 49800
+    },
+    {
+      "turn_index": 18,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 50059,
+      "end_ms": 50320
+    },
+    {
+      "turn_index": 19,
+      "speaker": "Agent",
+      "text": "Now just to ask, Helen, who's your current internet service provider? Do you have one? iPremis. You are currently with iPremis. How much are you paying?",
+      "start_ms": 50780,
+      "end_ms": 59980
+    },
+    {
+      "turn_index": 20,
+      "speaker": "Customer",
+      "text": "They reduced it today to 65. That's all right here.",
+      "start_ms": 60620,
+      "end_ms": 62940
+    },
+    {
+      "turn_index": 21,
+      "speaker": "Agent",
+      "text": "$65 for how many MBPS? Do you know the speed? How do you care? 25, 25 MBPS? Yeah, okay. And how many people are using the internet? Just myself. Are you used to internet? Are you do",
+      "start_ms": 63940,
+      "end_ms": 74579
+    },
+    {
+      "turn_index": 22,
+      "speaker": "Customer",
+      "text": "gaming, video streaming? Work from home? Yeah, I do. No, I don't work from home. I just watch, you know, Netflix and that sort of stuff. And I've seen my TV still at like channel seven,",
+      "start_ms": 74579,
+      "end_ms": 84560
+    },
+    {
+      "turn_index": 23,
+      "speaker": "Agent",
+      "text": "Channel 9, whatever. Okay. I stream that through the internet. And do you need the home phone line? Do you need a landline or no? No. Okay. Because I just want to tell you, I can give you a 25 MBBS for only $35 and 90 for the first six months. Yep. And then what does it go up to? $72 and 90.",
+      "start_ms": 84560,
+      "end_ms": 104840
+    },
+    {
+      "turn_index": 24,
+      "speaker": "Customer",
+      "text": "That's the regular price. Yeah. See, I'm beyond that. But with that, I might save myself $20 a month for six months, but then it's then I have $7 a month here. I'm going on. But, so you're not",
+      "start_ms": 105020,
+      "end_ms": 117579
+    },
+    {
+      "turn_index": 25,
+      "speaker": "Agent",
+      "text": "no last in contract with the plan. It's just a month to month contract. I mean, yeah. Before the six weeks expire, you can visit again our website and see if we can give you another set of promotion",
+      "start_ms": 117579,
+      "end_ms": 128139
+    },
+    {
+      "turn_index": 26,
+      "speaker": "Customer",
+      "text": "of this, ma'am. Yeah. Yeah. Maybe I'll just stay where I am. I couldn't be bothered because I have",
+      "start_ms": 128139,
+      "end_ms": 134360
+    },
+    {
+      "turn_index": 27,
+      "speaker": "Agent",
+      "text": "to pay not much savings. I really understand. Again, that's still okay. $20. I can also give you a free modem with that with no extra cost. Who is that through? That is from Fiberlink. Right.",
+      "start_ms": 134360,
+      "end_ms": 145340
+    },
+    {
+      "turn_index": 28,
+      "speaker": "Customer",
+      "text": "Fiberlink. So free modem. Yep. And $49 a month for $42 a month. Dollars. Yeah. Do I get a check",
+      "start_ms": 146120,
+      "end_ms": 153440
+    },
+    {
+      "turn_index": 29,
+      "speaker": "Agent",
+      "text": "for it? No. All the NBN, all the NBN plans, they're using only one network, all the retailers. That's the nbnphone.k. But for the mobile SIM plan, kindly use it at Telstra Network. I can. And",
+      "start_ms": 153440,
+      "end_ms": 167319
+    },
+    {
+      "turn_index": 30,
+      "speaker": "Customer",
+      "text": "And would it be a new modem or a refurbished one?",
+      "start_ms": 167319,
+      "end_ms": 169999
+    },
+    {
+      "turn_index": 31,
+      "speaker": "Agent",
+      "text": "So that's the brand new modem, brand new modem. It's all yours. It's 100% free. Even you switch provider, even you move to a different property, you can keep and use the same modem. No need to repair.",
+      "start_ms": 169999,
+      "end_ms": 183040
+    },
+    {
+      "turn_index": 32,
+      "speaker": "Customer",
+      "text": "Happens if what happens if at the end of six months when it goes up to $72 and I change, do I get to get the modem or do I get to the account then?",
+      "start_ms": 183040,
+      "end_ms": 190120
+    },
+    {
+      "turn_index": 33,
+      "speaker": "Agent",
+      "text": "No, no. It's 100% free. It's all yours. you switch provider even you move to a different property you can use and keep it no need to return it okay again it's 100% free okay so how does it how does it work how does how does get changed over no we can quickly set this up for you without paying any status fee K now I just want to tell you that how do I get the modem yeah it will be delivered to you within three to five business days Okay And is there a cost involved in having it delivered No it 100 No extra cost",
+      "start_ms": 190120,
+      "end_ms": 224188
+    },
+    {
+      "turn_index": 34,
+      "speaker": "Customer",
+      "text": "Okay. All right. Yep. Sounds like a good deal.",
+      "start_ms": 224268,
+      "end_ms": 226808
+    },
+    {
+      "turn_index": 35,
+      "speaker": "Agent",
+      "text": "Yeah. That's why we can quickly set it up for you so you can get the free modem, Kay, within three to five business days. Now, I just want to tell you that again, here are some detail. Here are some more details about it, ma'am. This value plan from Fiberlink helps with, comes with a month-to-month contract only and again provides 25 Mbps typical in download speed and 8.5 Mbps typical in the upload speed from 7pm to 11pm. Again, the original plan cost is $72.90 per month, but we have an offer ongoing where you will get this plan as $35.90 only per month for the first six months and then $72.90.",
+      "start_ms": 227148,
+      "end_ms": 269128
+    },
+    {
+      "turn_index": 36,
+      "speaker": "Customer",
+      "text": "Okay?",
+      "start_ms": 269948,
+      "end_ms": 270188
+    },
+    {
+      "turn_index": 37,
+      "speaker": "Agent",
+      "text": "And then I just want to tell you that the modem that you will receive is the Netcom CF40 Wi-Fi 6 modem.",
+      "start_ms": 270188,
+      "end_ms": 278148
+    },
+    {
+      "turn_index": 38,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 278388,
+      "end_ms": 278568
+    },
+    {
+      "turn_index": 39,
+      "speaker": "Agent",
+      "text": "Again, it's 100% free. No extra cost. It's all yours.",
+      "start_ms": 279128,
+      "end_ms": 283388
+    },
+    {
+      "turn_index": 40,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 283988,
+      "end_ms": 284328
+    },
+    {
+      "turn_index": 41,
+      "speaker": "Agent",
+      "text": "And then the good thing with the modem, Helen, it's suitable for FTTT, HFC, FTTs, and fixed wireless connection types. That means it's almost compatible to all NBN plans.",
+      "start_ms": 284688,
+      "end_ms": 296988
+    },
+    {
+      "turn_index": 42,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 297548,
+      "end_ms": 297868
+    },
+    {
+      "turn_index": 43,
+      "speaker": "Agent",
+      "text": "and this is already a Wi-Fi 6 modem. It's already pre-configured. That means it's plugged and free, okay? And it's still used in the 2010, okay? So the delivery of the modem into a PowerPoint, when I get it, you just did and it's good to go, okay? Okay, so there's no setting up or anything like that.",
+      "start_ms": 297868,
+      "end_ms": 316968
+    },
+    {
+      "turn_index": 44,
+      "speaker": "Customer",
+      "text": "You just plug it in?",
+      "start_ms": 317008,
+      "end_ms": 317708
+    },
+    {
+      "turn_index": 45,
+      "speaker": "Agent",
+      "text": "Yep. Because it's already pre-configured to FiberLink, okay? That's why you don't need to reconfigure it, okay?",
+      "start_ms": 317888,
+      "end_ms": 323328
+    },
+    {
+      "turn_index": 46,
+      "speaker": "Customer",
+      "text": "Okay, yep.",
+      "start_ms": 323568,
+      "end_ms": 324248
+    },
+    {
+      "turn_index": 47,
+      "speaker": "Agent",
+      "text": "And then again, the monthly charge will be $42 dollars and 90 only no setup fee no any additional cost okay yep and this will be under your name am i correct yes how do you want to address your name",
+      "start_ms": 324668,
+      "end_ms": 336288
+    },
+    {
+      "turn_index": 48,
+      "speaker": "Customer",
+      "text": "dismissed or misses or do you have any title mrs. Helen yeah Helen Carter yeah",
+      "start_ms": 336288,
+      "end_ms": 341948
+    },
+    {
+      "turn_index": 49,
+      "speaker": "Agent",
+      "text": "can you please verify again your first and last name as per ID please sorry I didn't get that can you please verify your first and last name as per ID Helen",
+      "start_ms": 341948,
+      "end_ms": 351308
+    },
+    {
+      "turn_index": 50,
+      "speaker": "Customer",
+      "text": "Carter Helen or Helen well I go by Helen Helen okay Helen yeah okay but again Helen right because that is the exact bill that you will you will see on the bill okay yep mm-hmm",
+      "start_ms": 351308,
+      "end_ms": 362988
+    },
+    {
+      "turn_index": 51,
+      "speaker": "Agent",
+      "text": "mrs. Helen Carter right yes okay and then your email address can you please also verify it it's",
+      "start_ms": 362988,
+      "end_ms": 371148
+    },
+    {
+      "turn_index": 52,
+      "speaker": "Customer",
+      "text": "Helen Carter at gmail.com thank you and then your mobile number can you please also verify it 0 4",
+      "start_ms": 371148,
+      "end_ms": 378388
+    },
+    {
+      "turn_index": 53,
+      "speaker": "Agent",
+      "text": "12 87 364 okay and your date of birth 12th March 1978 okay and then do you want to add a secondary",
+      "start_ms": 378388,
+      "end_ms": 385548
+    },
+    {
+      "turn_index": 54,
+      "speaker": "Customer",
+      "text": "mobile number? Sorry, what was that? Do you want to add a secondary mobile number or alternate",
+      "start_ms": 385548,
+      "end_ms": 390828
+    },
+    {
+      "turn_index": 55,
+      "speaker": "Agent",
+      "text": "mobile number? No. Okay. And you are currently with iPrimus, right? That's correct. Yes.",
+      "start_ms": 390828,
+      "end_ms": 396768
+    },
+    {
+      "turn_index": 56,
+      "speaker": "Customer",
+      "text": "Are you able to pull up your iPrimus bill or no right now? Hang on. Yes, please. Yep. Got",
+      "start_ms": 397448,
+      "end_ms": 403388
+    },
+    {
+      "turn_index": 57,
+      "speaker": "Agent",
+      "text": "84729103. Can you please check if you can see the ABC ID? ABC ID? ABC? Yep. ABC ID. I got issue",
+      "start_ms": 403388,
+      "end_ms": 410828
+    },
+    {
+      "turn_index": 58,
+      "speaker": "Customer",
+      "text": "date. I've seen that balance. Clear button. Customer number. Is that it? No. ABC IDs. You can",
+      "start_ms": 410828,
+      "end_ms": 415948
+    },
+    {
+      "turn_index": 59,
+      "speaker": "Agent",
+      "text": "check it, but if it's not visible, it's okay. I've got internet service number. It's okay if you",
+      "start_ms": 415948,
+      "end_ms": 420708
+    },
+    {
+      "turn_index": 60,
+      "speaker": "Customer",
+      "text": "don't see it. That means it's not visible on the bill. Yeah. No, I can't see it anywhere there.",
+      "start_ms": 420708,
+      "end_ms": 426428
+    },
+    {
+      "turn_index": 61,
+      "speaker": "Agent",
+      "text": "It's okay. And then again, the connection address will be 14 Harbour Street, Parramatta, Nisal Vows 2150 Correct Yeah And how soon do you want your connection to be at the address As soon as possible or do you prefer the same As soon as possible",
+      "start_ms": 426528,
+      "end_ms": 442956
+    },
+    {
+      "turn_index": 62,
+      "speaker": "Customer",
+      "text": "As soon as possible. Okay.",
+      "start_ms": 443316,
+      "end_ms": 444816
+    },
+    {
+      "turn_index": 63,
+      "speaker": "Agent",
+      "text": "And do you want your modem to be delivered at the same address or do you want a different address? Same address? Same address?",
+      "start_ms": 445156,
+      "end_ms": 451516
+    },
+    {
+      "turn_index": 64,
+      "speaker": "Customer",
+      "text": "Yeah.",
+      "start_ms": 451756,
+      "end_ms": 452036
+    },
+    {
+      "turn_index": 65,
+      "speaker": "Agent",
+      "text": "Okay. Again, the delivery will be three to five business days. Okay?",
+      "start_ms": 452276,
+      "end_ms": 456396
+    },
+    {
+      "turn_index": 66,
+      "speaker": "Customer",
+      "text": "Yeah. No. No, just with the delivery of the modem, the Harbour Street entrance is closed at the moment.",
+      "start_ms": 456396,
+      "end_ms": 464256
+    },
+    {
+      "turn_index": 67,
+      "speaker": "Agent",
+      "text": "So they will have to come to 14 Harbour Street, Parramatta, New South Wales, 2150. There's two entrances. Harbour Street, Parramatta, New South Wales, 2150.",
+      "start_ms": 464576,
+      "end_ms": 472396
+    },
+    {
+      "turn_index": 68,
+      "speaker": "Customer",
+      "text": "I see.",
+      "start_ms": 472816,
+      "end_ms": 473156
+    },
+    {
+      "turn_index": 69,
+      "speaker": "Agent",
+      "text": "Okay. Yeah, because I can't get you in the pre-code.",
+      "start_ms": 473396,
+      "end_ms": 476676
+    },
+    {
+      "turn_index": 70,
+      "speaker": "Customer",
+      "text": "I see.",
+      "start_ms": 476896,
+      "end_ms": 477376
+    },
+    {
+      "turn_index": 71,
+      "speaker": "Agent",
+      "text": "Okay. It's already noted.",
+      "start_ms": 477616,
+      "end_ms": 479216
+    },
+    {
+      "turn_index": 72,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 479636,
+      "end_ms": 479936
+    },
+    {
+      "turn_index": 73,
+      "speaker": "Agent",
+      "text": "Now, again, to set up your account, Helen, we need to collect your preferred payment method. Are you using a credit card or debit card?",
+      "start_ms": 480396,
+      "end_ms": 487416
+    },
+    {
+      "turn_index": 74,
+      "speaker": "Customer",
+      "text": "Am I what, sir?",
+      "start_ms": 487416,
+      "end_ms": 488616
+    },
+    {
+      "turn_index": 75,
+      "speaker": "Agent",
+      "text": "I, again, to set up your account, we need to collect your preferred payment method because this will be direct debit every month from the account.",
+      "start_ms": 489596,
+      "end_ms": 498116
+    },
+    {
+      "turn_index": 76,
+      "speaker": "Customer",
+      "text": "From the account.",
+      "start_ms": 498456,
+      "end_ms": 498976
+    },
+    {
+      "turn_index": 77,
+      "speaker": "Agent",
+      "text": "Okay. Are you okay? But before that, I need to mute the recording. Okay?",
+      "start_ms": 499736,
+      "end_ms": 504276
+    },
+    {
+      "turn_index": 78,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 508356,
+      "end_ms": 508876
+    },
+    {
+      "turn_index": 79,
+      "speaker": "Agent",
+      "text": "The recording is already resumed. Now, can you please, do you have access on your email right now? Right?",
+      "start_ms": 509316,
+      "end_ms": 515036
+    },
+    {
+      "turn_index": 80,
+      "speaker": "Customer",
+      "text": "Yes, I do.",
+      "start_ms": 515256,
+      "end_ms": 516096
+    },
+    {
+      "turn_index": 81,
+      "speaker": "Agent",
+      "text": "Okay.",
+      "start_ms": 516376,
+      "end_ms": 516636
+    },
+    {
+      "turn_index": 82,
+      "speaker": "Customer",
+      "text": "I'm not sending in.",
+      "start_ms": 516976,
+      "end_ms": 517756
+    },
+    {
+      "turn_index": 83,
+      "speaker": "Agent",
+      "text": "Okay. Can you please check?",
+      "start_ms": 517916,
+      "end_ms": 518936
+    },
+    {
+      "turn_index": 84,
+      "speaker": "Customer",
+      "text": "I just sent it, I think 10 minutes ago, the email.",
+      "start_ms": 518996,
+      "end_ms": 521076
+    },
+    {
+      "turn_index": 85,
+      "speaker": "Agent",
+      "text": "Just let me know if you repeat.",
+      "start_ms": 521436,
+      "end_ms": 522516
+    },
+    {
+      "turn_index": 86,
+      "speaker": "Customer",
+      "text": "It's from Equinix Comparison. Yep. Yep.",
+      "start_ms": 522716,
+      "end_ms": 524776
+    },
+    {
+      "turn_index": 87,
+      "speaker": "Agent",
+      "text": "Correct.",
+      "start_ms": 524956,
+      "end_ms": 525236
+    },
+    {
+      "turn_index": 88,
+      "speaker": "Customer",
+      "text": "Yep. Yeah.",
+      "start_ms": 525476,
+      "end_ms": 525936
+    },
+    {
+      "turn_index": 89,
+      "speaker": "Agent",
+      "text": "Open the email and then click view plan.",
+      "start_ms": 526036,
+      "end_ms": 527676
+    },
+    {
+      "turn_index": 90,
+      "speaker": "Customer",
+      "text": "Yeah.",
+      "start_ms": 528056,
+      "end_ms": 528316
+    },
+    {
+      "turn_index": 91,
+      "speaker": "Agent",
+      "text": "Okay. After you click view plan, you will see the plan details, right?",
+      "start_ms": 528556,
+      "end_ms": 532816
+    },
+    {
+      "turn_index": 92,
+      "speaker": "Customer",
+      "text": "Yep.",
+      "start_ms": 533216,
+      "end_ms": 533476
+    },
+    {
+      "turn_index": 93,
+      "speaker": "Agent",
+      "text": "So you're in the yep, travel there and travel. So on the lower part of it, can you please click apply now?",
+      "start_ms": 533756,
+      "end_ms": 539656
+    },
+    {
+      "turn_index": 94,
+      "speaker": "Customer",
+      "text": "Yes.",
+      "start_ms": 539836,
+      "end_ms": 540076
+    },
+    {
+      "turn_index": 95,
+      "speaker": "Agent",
+      "text": "Okay. After you click apply now, yep, click apply now and it will load and you will go to the modem.k. Now on the modem, can you please look for the Netcom PS40WiFi 6 modem?",
+      "start_ms": 540316,
+      "end_ms": 550376
+    },
+    {
+      "turn_index": 96,
+      "speaker": "Customer",
+      "text": "The Wi-Fi 6 pre-configured. Is that the one? Yeah, the Netcom CF40WiFi 6, right? CF40WiFi 6.",
+      "start_ms": 550796,
+      "end_ms": 559076
+    },
+    {
+      "turn_index": 97,
+      "speaker": "Agent",
+      "text": "Yep. Do you see the $0 up front? Right. Yep. Yep. Yep. Yep. Can you please select it? Make sure that you selected it.",
+      "start_ms": 559676,
+      "end_ms": 566996
+    },
+    {
+      "turn_index": 98,
+      "speaker": "Customer",
+      "text": "Yep, I've selected that.",
+      "start_ms": 567316,
+      "end_ms": 568376
+    },
+    {
+      "turn_index": 99,
+      "speaker": "Agent",
+      "text": "Okay. And then after that, scroll it down. Yep. Now you will see the total minimum cost of $317. right? Yeah. Yep. You don't have to worry. If you will see the new development fee, right, of $275, you don't have to worry. You will not pay for that because your address is already an NBN ready. That is only applicable for a newly built house. Okay. Because they need to install the NBN infrastructure of the address. That's why if you can see the June development fee, there's a open and close parenthesis, if applicable. but your address is not applicable for that, okay? So you just need the payment, and then click next personal detail.",
+      "start_ms": 568796,
+      "end_ms": 611936
+    },
+    {
+      "turn_index": 100,
+      "speaker": "Customer",
+      "text": "Yep. Next address details?",
+      "start_ms": 612276,
+      "end_ms": 613836
+    },
+    {
+      "turn_index": 101,
+      "speaker": "Agent",
+      "text": "Yeah. Make sure all the information are correct, and then click next address detail.",
+      "start_ms": 614156,
+      "end_ms": 618296
+    },
+    {
+      "turn_index": 102,
+      "speaker": "Customer",
+      "text": "It's still showing that minimum cost of $317, but don't worry about that.",
+      "start_ms": 618616,
+      "end_ms": 623336
+    },
+    {
+      "turn_index": 103,
+      "speaker": "Agent",
+      "text": "I understand. It's okay. You don't need to worry, okay? It will not be charged the $207. And then next address, you will see the address. Yeah, you will see. Next address. Yep. You will need to select as soon as possible on the connection date. And then on the delivery of the modem selectees. Okay? I mean the address of the delivery. Okay So do you want the modem to be delivered at the current address Click no Yes Select yes No Select yes Because it will be the same address Right It will be delivered at the same address No They got a delivery to 14 Harbour Street, Parramatta, Nisav 2150. I see. Okay. Can you please select no? Yep. Click no and then select the exact address. Okay. Yeah. 14 Harbour Street, Parramatta, Nisav 2150. Just let me know if you have any additional questions, Kay.",
+      "start_ms": 623856,
+      "end_ms": 682504
+    },
+    {
+      "turn_index": 104,
+      "speaker": "Customer",
+      "text": "It says address, address not found.",
+      "start_ms": 682824,
+      "end_ms": 684164
+    },
+    {
+      "turn_index": 105,
+      "speaker": "Agent",
+      "text": "Please enter correct address or enter it manually.",
+      "start_ms": 684484,
+      "end_ms": 686484
+    },
+    {
+      "turn_index": 106,
+      "speaker": "Customer",
+      "text": "So I've entered it manually.",
+      "start_ms": 687184,
+      "end_ms": 688264
+    },
+    {
+      "turn_index": 107,
+      "speaker": "Agent",
+      "text": "Right, Ellen, can you please enter it manually?",
+      "start_ms": 688584,
+      "end_ms": 691104
+    },
+    {
+      "turn_index": 108,
+      "speaker": "Customer",
+      "text": "But I'm trying to stop, not still. I'm trying to, Kay, it's still coming up with that. I'll put my card details in.",
+      "start_ms": 691744,
+      "end_ms": 698564
+    },
+    {
+      "turn_index": 109,
+      "speaker": "Agent",
+      "text": "So it's still coming up with that $317, but don't worry about that.",
+      "start_ms": 698564,
+      "end_ms": 702584
+    },
+    {
+      "turn_index": 110,
+      "speaker": "Customer",
+      "text": "I see.",
+      "start_ms": 702724,
+      "end_ms": 703044
+    },
+    {
+      "turn_index": 111,
+      "speaker": "Agent",
+      "text": "You don't need to worry. I really guarantee you it will not be charged.",
+      "start_ms": 703304,
+      "end_ms": 706364
+    },
+    {
+      "turn_index": 112,
+      "speaker": "Customer",
+      "text": "Okay? Okay.",
+      "start_ms": 706644,
+      "end_ms": 707384
+    },
+    {
+      "turn_index": 113,
+      "speaker": "Agent",
+      "text": "So you need to only $40, $42.",
+      "start_ms": 707724,
+      "end_ms": 710084
+    },
+    {
+      "turn_index": 114,
+      "speaker": "Customer",
+      "text": "Detail?",
+      "start_ms": 710724,
+      "end_ms": 711284
+    },
+    {
+      "turn_index": 115,
+      "speaker": "Agent",
+      "text": "Yep. Click next review details. Make sure that you tick the box that you agree.",
+      "start_ms": 711624,
+      "end_ms": 716504
+    },
+    {
+      "turn_index": 116,
+      "speaker": "Customer",
+      "text": "Yep. Yep. Nah, just me.",
+      "start_ms": 717064,
+      "end_ms": 719324
+    },
+    {
+      "turn_index": 117,
+      "speaker": "Agent",
+      "text": "And you will see, hmm?",
+      "start_ms": 719564,
+      "end_ms": 720344
+    },
+    {
+      "turn_index": 118,
+      "speaker": "Customer",
+      "text": "I'll just try putting it in again. Again.",
+      "start_ms": 720484,
+      "end_ms": 722864
+    },
+    {
+      "turn_index": 119,
+      "speaker": "Agent",
+      "text": "What is the delivery address? Can you please tell me?",
+      "start_ms": 723304,
+      "end_ms": 725884
+    },
+    {
+      "turn_index": 120,
+      "speaker": "Customer",
+      "text": "It's 14 Harbor Street, Parramatta, New South Wales, 250.",
+      "start_ms": 726884,
+      "end_ms": 730604
+    },
+    {
+      "turn_index": 121,
+      "speaker": "Agent",
+      "text": "Okay. Okay. Can do it.",
+      "start_ms": 731264,
+      "end_ms": 732644
+    },
+    {
+      "turn_index": 122,
+      "speaker": "Customer",
+      "text": "Yeah. It's okay.",
+      "start_ms": 732644,
+      "end_ms": 733584
+    },
+    {
+      "turn_index": 123,
+      "speaker": "Agent",
+      "text": "Can you please select, can you please select ears?",
+      "start_ms": 733584,
+      "end_ms": 735504
+    },
+    {
+      "turn_index": 124,
+      "speaker": "Customer",
+      "text": "I will be the one who will change the delivery address.",
+      "start_ms": 735604,
+      "end_ms": 737704
+    },
+    {
+      "turn_index": 125,
+      "speaker": "Agent",
+      "text": "Okay, so you will not be worried.",
+      "start_ms": 738284,
+      "end_ms": 740024
+    },
+    {
+      "turn_index": 126,
+      "speaker": "Customer",
+      "text": "Again, train, Harbour Street, Parramatta, Nisalvalves, 2150.",
+      "start_ms": 740544,
+      "end_ms": 745584
+    },
+    {
+      "turn_index": 127,
+      "speaker": "Agent",
+      "text": "Right?",
+      "start_ms": 746164,
+      "end_ms": 746664
+    },
+    {
+      "turn_index": 128,
+      "speaker": "Customer",
+      "text": "Harbour Street, Parramatta, Nisalvalves, 2150. No, no. No, the address for Harbour Street is 14 Harbour Street, Parramatta, Nisalvalves, 2150.",
+      "start_ms": 747564,
+      "end_ms": 756424
+    },
+    {
+      "turn_index": 129,
+      "speaker": "Agent",
+      "text": "Okay, hang on.",
+      "start_ms": 756904,
+      "end_ms": 758184
+    },
+    {
+      "turn_index": 130,
+      "speaker": "Customer",
+      "text": "That might let me delivery address. Hang on. Let me. 14 Harbour Street, Parramatta, Nisalbal, 2150. Yeah?",
+      "start_ms": 758444,
+      "end_ms": 765764
+    },
+    {
+      "turn_index": 131,
+      "speaker": "Agent",
+      "text": "It's because it's a Harbour Gardens and there's two entrances. And one entrance, the Harbour Street entrance, is closed at the moment, so you can't get up that road.",
+      "start_ms": 766404,
+      "end_ms": 774744
+    },
+    {
+      "turn_index": 132,
+      "speaker": "Customer",
+      "text": "I see. Because... It's okay. I think it's allowing me to put it in bit by bit. Okay. 14 Harbour Street, Parramatta, Nisalbal, 2050. 14 Harbour Street, Parramatta, Nisalbal, 2050. Okay.",
+      "start_ms": 775564,
+      "end_ms": 787264
+    },
+    {
+      "turn_index": 133,
+      "speaker": "Agent",
+      "text": "So a text message, 448291. And then click submit application. Just let me know if you already have the reference number.",
+      "start_ms": 787264,
+      "end_ms": 794364
+    },
+    {
+      "turn_index": 134,
+      "speaker": "Customer",
+      "text": "Yep.",
+      "start_ms": 794624,
+      "end_ms": 794824
+    },
+    {
+      "turn_index": 135,
+      "speaker": "Agent",
+      "text": "What is the reference number?",
+      "start_ms": 795024,
+      "end_ms": 795904
+    },
+    {
+      "turn_index": 136,
+      "speaker": "Customer",
+      "text": "APP3613790.",
+      "start_ms": 797684,
+      "end_ms": 798084
+    },
+    {
+      "turn_index": 137,
+      "speaker": "Agent",
+      "text": "Thank you for that. That means that you already take advantage of the offer.",
+      "start_ms": 798364,
+      "end_ms": 800924
+    },
+    {
+      "turn_index": 138,
+      "speaker": "Customer",
+      "text": "Okay. Yeah.",
+      "start_ms": 801244,
+      "end_ms": 801864
+    },
+    {
+      "turn_index": 139,
+      "speaker": "Agent",
+      "text": "So this is an Ambien.",
+      "start_ms": 801984,
+      "end_ms": 802784
+    },
+    {
+      "turn_index": 140,
+      "speaker": "Customer",
+      "text": "Yeah.",
+      "start_ms": 803124,
+      "end_ms": 803264
+    },
+    {
+      "turn_index": 141,
+      "speaker": "Agent",
+      "text": "That is an Ambien.",
+      "start_ms": 803424,
+      "end_ms": 804144
+    },
+    {
+      "turn_index": 142,
+      "speaker": "Customer",
+      "text": "Okay. Yeah. Yeah. Yeah. Okay.",
+      "start_ms": 804344,
+      "end_ms": 806464
+    },
+    {
+      "turn_index": 143,
+      "speaker": "Agent",
+      "text": "Congratulations for choosing Fiberlink. You need to wait for the delivery of the modem. It will be three to five business days.",
+      "start_ms": 806704,
+      "end_ms": 812724
+    },
+    {
+      "turn_index": 144,
+      "speaker": "Customer",
+      "text": "Okay.",
+      "start_ms": 813144,
+      "end_ms": 813424
+    },
+    {
+      "turn_index": 145,
+      "speaker": "Agent",
+      "text": "And after that, you can activate and connect it. And then now, since we already help you with your internet, how about your electricity and gas? Maybe we could also give you a picture of that.",
+      "start_ms": 813824,
+      "end_ms": 822684
+    },
+    {
+      "turn_index": 146,
+      "speaker": "Customer",
+      "text": "No, I don't have gas and my electricity is all with aircon. I buy it off the complex that I live in.",
+      "start_ms": 823344,
+      "end_ms": 829504
+    },
+    {
+      "turn_index": 147,
+      "speaker": "Agent",
+      "text": "It doesn't go through, I see. So it's embedded or anything like that.",
+      "start_ms": 829584,
+      "end_ms": 832724
+    },
+    {
+      "turn_index": 148,
+      "speaker": "Customer",
+      "text": "Yeah, I see. Okay.",
+      "start_ms": 833384,
+      "end_ms": 834684
+    },
+    {
+      "turn_index": 149,
+      "speaker": "Agent",
+      "text": "If that's the case here again, Helen, congratulations for choosing Fiberlink. Thank you also for choosing EconX Comparison. Do you have another question?",
+      "start_ms": 834964,
+      "end_ms": 843684
+    },
+    {
+      "turn_index": 150,
+      "speaker": "Customer",
+      "text": "No.",
+      "start_ms": 844264,
+      "end_ms": 844584
+    },
+    {
+      "turn_index": 151,
+      "speaker": "Agent",
+      "text": "do you have a contact phone number I can contact you on if I have you will see it on the yeah you will see it on the you will see the page of the reference number right below that you will see all the contact number that you can contact okay yeah okay yep yep this is it okay thank you from the lower price okay yeah again thank you also Helen okay congratulations this is Marco Santos again from Equinix comparison again it was a pleasure to help you out okay cheers and have a wonderful day okay thank you you're welcome bye for now bye",
+      "start_ms": 844584,
+      "end_ms": 873744
+    }
+  ],
+  "full_text": " Hello, Helen speaking. Yes. Hi, Helen. Good day. This is Marco Santos from Internet's Comparison. How are you? Good, thanks. How are you? Yeah, I'm good. Thank you. And we noticed that you're looking for better internet plans and we're calling to assist you with this. Yay, okay. And as I check it, your address is 14 Harbour Street, Parramatta, Nisawaut, 2150. Correct. Ellen. Yep. 14 Harbour Street, Parramatta, Nisawar, turn 2150. K. By the way, please be advised that this call will be recorded for quality assurance and training purposes. K. Now let me double check the address. Bear with me. There you go. As I check it, yeah, the address is already an NBN ready fiber to the premises technology. Okay. Now just to ask, Helen, who's your current internet service provider? Do you have one? iPremis. You are currently with iPremis. How much are you paying? They reduced it today to 65. That's all right here. $65 for how many MBPS? Do you know the speed? How do you care? 25, 25 MBPS? Yeah, okay. And how many people are using the internet? Just myself. Are you used to internet? Are you do gaming, video streaming? Work from home? Yeah, I do. No, I don't work from home. I just watch, you know, Netflix and that sort of stuff. And I've seen my TV still at like channel seven, Channel 9, whatever. Okay. I stream that through the internet. And do you need the home phone line? Do you need a landline or no? No. Okay. Because I just want to tell you, I can give you a 25 MBBS for only $35 and 90 for the first six months. Yep. And then what does it go up to? $72 and 90. That's the regular price. Yeah. See, I'm beyond that. But with that, I might save myself $20 a month for six months, but then it's then I have $7 a month here. I'm going on. But, so you're not no last in contract with the plan. It's just a month to month contract. I mean, yeah. Before the six weeks expire, you can visit again our website and see if we can give you another set of promotion of this, ma'am. Yeah. Yeah. Maybe I'll just stay where I am. I couldn't be bothered because I have to pay not much savings. I really understand. Again, that's still okay. $20. I can also give you a free modem with that with no extra cost. Who is that through? That is from Fiberlink. Right. Fiberlink. So free modem. Yep. And $49 a month for $42 a month. Dollars. Yeah. Do I get a check for it? No. All the NBN, all the NBN plans, they're using only one network, all the retailers. That's the nbnphone.k. But for the mobile SIM plan, kindly use it at Telstra Network. I can. And And would it be a new modem or a refurbished one? So that's the brand new modem, brand new modem. It's all yours. It's 100% free. Even you switch provider, even you move to a different property, you can keep and use the same modem. No need to repair. Happens if what happens if at the end of six months when it goes up to $72 and I change, do I get to get the modem or do I get to the account then? No, no. It's 100% free. It's all yours. you switch provider even you move to a different property you can use and keep it no need to return it okay again it's 100% free okay so how does it how does it work how does how does get changed over no we can quickly set this up for you without paying any status fee K now I just want to tell you that how do I get the modem yeah it will be delivered to you within three to five business days Okay And is there a cost involved in having it delivered No it 100 No extra cost Okay. All right. Yep. Sounds like a good deal. Yeah. That's why we can quickly set it up for you so you can get the free modem, Kay, within three to five business days. Now, I just want to tell you that again, here are some detail. Here are some more details about it, ma'am. This value plan from Fiberlink helps with, comes with a month-to-month contract only and again provides 25 Mbps typical in download speed and 8.5 Mbps typical in the upload speed from 7pm to 11pm. Again, the original plan cost is $72.90 per month, but we have an offer ongoing where you will get this plan as $35.90 only per month for the first six months and then $72.90. Okay? And then I just want to tell you that the modem that you will receive is the Netcom CF40 Wi-Fi 6 modem. Okay. Again, it's 100% free. No extra cost. It's all yours. Okay. And then the good thing with the modem, Helen, it's suitable for FTTT, HFC, FTTs, and fixed wireless connection types. That means it's almost compatible to all NBN plans. Okay. and this is already a Wi-Fi 6 modem. It's already pre-configured. That means it's plugged and free, okay? And it's still used in the 2010, okay? So the delivery of the modem into a PowerPoint, when I get it, you just did and it's good to go, okay? Okay, so there's no setting up or anything like that. You just plug it in? Yep. Because it's already pre-configured to FiberLink, okay? That's why you don't need to reconfigure it, okay? Okay, yep. And then again, the monthly charge will be $42 dollars and 90 only no setup fee no any additional cost okay yep and this will be under your name am i correct yes how do you want to address your name dismissed or misses or do you have any title mrs. Helen yeah Helen Carter yeah can you please verify again your first and last name as per ID please sorry I didn't get that can you please verify your first and last name as per ID Helen Carter Helen or Helen well I go by Helen Helen okay Helen yeah okay but again Helen right because that is the exact bill that you will you will see on the bill okay yep mm-hmm mrs. Helen Carter right yes okay and then your email address can you please also verify it it's Helen Carter at gmail.com thank you and then your mobile number can you please also verify it 0 4 12 87 364 okay and your date of birth 12th March 1978 okay and then do you want to add a secondary mobile number? Sorry, what was that? Do you want to add a secondary mobile number or alternate mobile number? No. Okay. And you are currently with iPrimus, right? That's correct. Yes. Are you able to pull up your iPrimus bill or no right now? Hang on. Yes, please. Yep. Got 84729103. Can you please check if you can see the ABC ID? ABC ID? ABC? Yep. ABC ID. I got issue date. I've seen that balance. Clear button. Customer number. Is that it? No. ABC IDs. You can check it, but if it's not visible, it's okay. I've got internet service number. It's okay if you don't see it. That means it's not visible on the bill. Yeah. No, I can't see it anywhere there. It's okay. And then again, the connection address will be 14 Harbour Street, Parramatta, Nisal Vows 2150 Correct Yeah And how soon do you want your connection to be at the address As soon as possible or do you prefer the same As soon as possible As soon as possible. Okay. And do you want your modem to be delivered at the same address or do you want a different address? Same address? Same address? Yeah. Okay. Again, the delivery will be three to five business days. Okay? Yeah. No. No, just with the delivery of the modem, the Harbour Street entrance is closed at the moment. So they will have to come to 14 Harbour Street, Parramatta, New South Wales, 2150. There's two entrances. Harbour Street, Parramatta, New South Wales, 2150. I see. Okay. Yeah, because I can't get you in the pre-code. I see. Okay. It's already noted. Okay. Now, again, to set up your account, Helen, we need to collect your preferred payment method. Are you using a credit card or debit card? Am I what, sir? I, again, to set up your account, we need to collect your preferred payment method because this will be direct debit every month from the account. From the account. Okay. Are you okay? But before that, I need to mute the recording. Okay? Okay. The recording is already resumed. Now, can you please, do you have access on your email right now? Right? Yes, I do. Okay. I'm not sending in. Okay. Can you please check? I just sent it, I think 10 minutes ago, the email. Just let me know if you repeat. It's from Equinix Comparison. Yep. Yep. Correct. Yep. Yeah. Open the email and then click view plan. Yeah. Okay. After you click view plan, you will see the plan details, right? Yep. So you're in the yep, travel there and travel. So on the lower part of it, can you please click apply now? Yes. Okay. After you click apply now, yep, click apply now and it will load and you will go to the modem.k. Now on the modem, can you please look for the Netcom PS40WiFi 6 modem? The Wi-Fi 6 pre-configured. Is that the one? Yeah, the Netcom CF40WiFi 6, right? CF40WiFi 6. Yep. Do you see the $0 up front? Right. Yep. Yep. Yep. Yep. Can you please select it? Make sure that you selected it. Yep, I've selected that. Okay. And then after that, scroll it down. Yep. Now you will see the total minimum cost of $317. right? Yeah. Yep. You don't have to worry. If you will see the new development fee, right, of $275, you don't have to worry. You will not pay for that because your address is already an NBN ready. That is only applicable for a newly built house. Okay. Because they need to install the NBN infrastructure of the address. That's why if you can see the June development fee, there's a open and close parenthesis, if applicable. but your address is not applicable for that, okay? So you just need the payment, and then click next personal detail. Yep. Next address details? Yeah. Make sure all the information are correct, and then click next address detail. It's still showing that minimum cost of $317, but don't worry about that. I understand. It's okay. You don't need to worry, okay? It will not be charged the $207. And then next address, you will see the address. Yeah, you will see. Next address. Yep. You will need to select as soon as possible on the connection date. And then on the delivery of the modem selectees. Okay? I mean the address of the delivery. Okay So do you want the modem to be delivered at the current address Click no Yes Select yes No Select yes Because it will be the same address Right It will be delivered at the same address No They got a delivery to 14 Harbour Street, Parramatta, Nisav 2150. I see. Okay. Can you please select no? Yep. Click no and then select the exact address. Okay. Yeah. 14 Harbour Street, Parramatta, Nisav 2150. Just let me know if you have any additional questions, Kay. It says address, address not found. Please enter correct address or enter it manually. So I've entered it manually. Right, Ellen, can you please enter it manually? But I'm trying to stop, not still. I'm trying to, Kay, it's still coming up with that. I'll put my card details in. So it's still coming up with that $317, but don't worry about that. I see. You don't need to worry. I really guarantee you it will not be charged. Okay? Okay. So you need to only $40, $42. Detail? Yep. Click next review details. Make sure that you tick the box that you agree. Yep. Yep. Nah, just me. And you will see, hmm? I'll just try putting it in again. Again. What is the delivery address? Can you please tell me? It's 14 Harbor Street, Parramatta, New South Wales, 250. Okay. Okay. Can do it. Yeah. It's okay. Can you please select, can you please select ears? I will be the one who will change the delivery address. Okay, so you will not be worried. Again, train, Harbour Street, Parramatta, Nisalvalves, 2150. Right? Harbour Street, Parramatta, Nisalvalves, 2150. No, no. No, the address for Harbour Street is 14 Harbour Street, Parramatta, Nisalvalves, 2150. Okay, hang on. That might let me delivery address. Hang on. Let me. 14 Harbour Street, Parramatta, Nisalbal, 2150. Yeah? It's because it's a Harbour Gardens and there's two entrances. And one entrance, the Harbour Street entrance, is closed at the moment, so you can't get up that road. I see. Because... It's okay. I think it's allowing me to put it in bit by bit. Okay. 14 Harbour Street, Parramatta, Nisalbal, 2050. 14 Harbour Street, Parramatta, Nisalbal, 2050. Okay. So a text message, 448291. And then click submit application. Just let me know if you already have the reference number. Yep. What is the reference number? APP3613790. Thank you for that. That means that you already take advantage of the offer. Okay. Yeah. So this is an Ambien. Yeah. That is an Ambien. Okay. Yeah. Yeah. Yeah. Okay. Congratulations for choosing Fiberlink. You need to wait for the delivery of the modem. It will be three to five business days. Okay. And after that, you can activate and connect it. And then now, since we already help you with your internet, how about your electricity and gas? Maybe we could also give you a picture of that. No, I don't have gas and my electricity is all with aircon. I buy it off the complex that I live in. It doesn't go through, I see. So it's embedded or anything like that. Yeah, I see. Okay. If that's the case here again, Helen, congratulations for choosing Fiberlink. Thank you also for choosing EconX Comparison. Do you have another question? No. do you have a contact phone number I can contact you on if I have you will see it on the yeah you will see it on the you will see the page of the reference number right below that you will see all the contact number that you can contact okay yeah okay yep yep this is it okay thank you from the lower price okay yeah again thank you also Helen okay congratulations this is Marco Santos again from Equinix comparison again it was a pleasure to help you out okay cheers and have a wonderful day okay thank you you're welcome bye for now bye",
+  "duration_sec": 874.032670222,
+  "language": "English",
+  "source": "groq-whisper:3613794.mp3"
+}
